@@ -27,8 +27,4 @@ describe Generator do
     end
   end
 
-  
-
-
-
 end
