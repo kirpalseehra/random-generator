@@ -7,8 +7,12 @@
 
 ### How to download
 1. Copy/Clone the URL on GitHub into own terminal
-2. Unzip file into selected folder on own device
-3. Run rspec in terminal and install gems if required 
+2. Unzip file into selected folder on own device 
+3. Open in selected text editor
+
+# How to use the random generator
+1. 
+
 
 ### Challenges
 1. Creating the unit tests

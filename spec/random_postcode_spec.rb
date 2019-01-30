@@ -2,12 +2,13 @@ require 'spec_helper'
 
 describe Generator do
 
+  random_number = rand(2..10)
   before(:all) do
-    @postcodes_array = Generator.new.postcodes.random_array(rand(2..10))
+    @postcodes_array = Generator.new.postcodes.random_array(random_number)
   end
 
   it 'should return postcodes within the range of 2 and 10 postcodes ' do
-    expect(@postcodes_array.length).to be_between(2,10)
+    expect(@postcodes_array.length).to eq random_number
   end
 
   it 'should return the random postcodes as an array' do
@@ -17,7 +18,6 @@ describe Generator do
   it 'should return the individual postcodes as a String' do
     @postcodes_array.each do |postcode|
       expect(postcode).to be_kind_of(String)
-      p postcode.class
     end
   end
 
