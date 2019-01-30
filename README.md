@@ -9,14 +9,18 @@
 1. Copy/Clone the URL on GitHub into own terminal
 2. Unzip file into selected folder on own device 
 3. Open in selected text editor
-4. Install gems using 'bundle init' if gems in the gemfile are not already installed
 
 # How to use the random generator
-1. Create a new method within the Generator class which creates an instance of the Random class  
-2. Create the methods you want to create inside the Random class
-3. Create the tests that compliment the methods in the Random class
-4. Open up terminal and navigate to the correct directory within your repository
-5. Run rspec in order to execute your tests
+1. Open your spec_helper.rb and require_relative with the given path of the Generator.rb file
+2. Instantiate the super class Generator.rb in your _spec.rb file
+3. Run the method within that Generator.rb superclass
+4. Create a variable to store the result using the random number array you create
+5. e.g. random_number = rand(2..10) 
+6. e.g. @postcodes_array = Generator.new.postcodes.random_array(random_number)
+
+# How to run tests
+1. Install gems using 'bundle init' if gems in the gemfile are not already installed
+2. Run rspec in your terminal 
 
 ### Challenges
 1. Creating the unit tests

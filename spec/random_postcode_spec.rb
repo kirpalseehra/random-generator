@@ -2,8 +2,8 @@ require 'spec_helper'
 
 describe Generator do
 
-  random_number = rand(2..10)
   before(:all) do
+    random_number = rand(2..10)
     @postcodes_array = Generator.new.postcodes.random_array(random_number)
   end
 
